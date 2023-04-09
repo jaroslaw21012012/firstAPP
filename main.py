@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QProgressBar, QTimeEdit
 import sys
 
 
@@ -18,6 +18,16 @@ class MyApp(QWidget):
         button = QPushButton(":D Hello!", self)
         button.setGeometry(160, 260, 80, 30)
         button.setStyleSheet("border-radius: 10px;background: rgb(255, 255, 255);border: 2px solid rgb(0, 0, 0);")
+
+
+        progressbar = QProgressBar(self)
+        progressbar.setGeometry(150, 130, 118, 23)
+        progressbar.setValue(99)
+
+
+        timeedit = QTimeEdit(self)
+        timeedit.setGeometry(160, 370, 118, 22)
+
 
 
 
