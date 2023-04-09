@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QProgressBar, QTimeEdit
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QProgressBar, QTimeEdit, QCheckBox, QLCDNumber
 import sys
 
 
@@ -29,8 +29,15 @@ class MyApp(QWidget):
         timeedit.setGeometry(160, 370, 118, 22)
 
 
+        checkbox = QCheckBox(self)
+        checkbox.setGeometry(140, 450, 191, 21)
+        checkbox.setText("нажми")
+        checkbox.setStyleSheet("border: 5px solid rgb(0, 0, 0);")
 
 
+        number = QLCDNumber(self)
+        number.setGeometry(70, 30, 301, 71)
+        number.setStyleSheet("border: 5px solid rgb(0, 0, 0);")
 
 
 
