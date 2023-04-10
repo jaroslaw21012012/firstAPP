@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QProgressBar, QTimeEdit, QCheckBox, QLCDNumber
+from PyQt6.QtWidgets import QApplication, QWidget, QPushButton, QProgressBar, QTimeEdit, QCheckBox, QLCDNumber, QCalendarWidget, QDial
 import sys
 
 
@@ -40,7 +40,14 @@ class MyApp(QWidget):
         number.setStyleSheet("border: 5px solid rgb(0, 0, 0);")
 
 
+        calendar = QCalendarWidget(self)
+        calendar.setGeometry(30, 480, 321, 111)
+        calendar.setStyleSheet("background: rgb(0, 255, 0) ;")
 
+
+        dial = QDial(self)
+        dial.setGeometry(269, 223, 91, 91)
+        dial.setStyleSheet("background: rgb(255, 255, 255);")
 
 
 
