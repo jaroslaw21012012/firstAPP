@@ -13,7 +13,7 @@ class MyApp(QWidget):
         self.setGeometry(100, 100, 400, 600)
         self.setMinimumSize(400, 600)
         self.setMaximumSize(400, 600)
-        self.setStyleSheet("background:rgb(255, 255, 192) ;")
+        self.setStyleSheet("background:qlineargradient(spread:pad, x1:0.528, y1:0, x2:0.54, y2:1, stop:0 rgba(255, 255, 127, 255), stop:1 rgba(255, 255, 255, 255)) ;")
 
         button = QPushButton(":D Hello!", self)
         button.setGeometry(160, 260, 80, 30)
