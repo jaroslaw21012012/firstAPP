@@ -19,14 +19,14 @@ class App(QWidget):
         self.vertical_layout = QVBoxLayout()
         self.setLayout(self.vertical_layout)
 
+        self.progressbar = QProgressBar()
+        self.progressbar.setValue(99)
+        self.vertical_layout.addWidget(self.progressbar)
 
         self.horizontal_layout = QHBoxLayout()
         self.vertical_layout.addLayout(self.horizontal_layout)
 
 
-        self.progressbar = QProgressBar()
-        self.progressbar.setValue(99)
-        self.vertical_layout.addWidget(self.progressbar)
 
 
         self.button1 = QPushButton("A")
