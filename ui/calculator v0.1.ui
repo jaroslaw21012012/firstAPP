@@ -24,84 +24,53 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>Password Generator</string>
-      </property>
-     </widget>
-    </item>
-    <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>Password Length:</string>
-        </property>
-       </widget>
+       <widget class="QLineEdit" name="lineEdit"/>
       </item>
       <item>
-       <widget class="QSpinBox" name="spinBox"/>
+       <widget class="QLineEdit" name="lineEdit_2"/>
       </item>
      </layout>
     </item>
     <item>
-     <widget class="QCheckBox" name="checkBox">
-      <property name="text">
-       <string>строчные буквы</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QCheckBox" name="checkBox_2">
-      <property name="text">
-       <string>заглавные буквы</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QCheckBox" name="checkBox_3">
-      <property name="text">
-       <string>цифры</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QCheckBox" name="checkBox_4">
-      <property name="text">
-       <string>спец. символы</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>PLACEHOLDER</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>/</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
        <widget class="QPushButton" name="pushButton_2">
         <property name="text">
-         <string>GENERATE</string>
+         <string>-</string>
         </property>
        </widget>
       </item>
-      <item>
+      <item row="0" column="0">
        <widget class="QPushButton" name="pushButton">
-        <property name="enabled">
-         <bool>true</bool>
-        </property>
-        <property name="mouseTracking">
-         <bool>false</bool>
-        </property>
         <property name="text">
-         <string>COPY TO CLICKBOARD</string>
+         <string>+</string>
         </property>
        </widget>
       </item>
      </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
